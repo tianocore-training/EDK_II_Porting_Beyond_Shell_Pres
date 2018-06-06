@@ -47,7 +47,7 @@ Note:
 -->
 <ul style="list-style-type:none">
  <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Locate driver locations for  porting EDK II modules<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; beyond the UEFI Shell for the New Project Platform </span> </li>
- <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Determine the protocols and UEFI Driver per Devices on a platform</span></li>
+ <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Determine the protocols then the UEFI Driver<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with Devices on a platform</span></li>
  <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;The goal is to boot to the OS</span></li>
 </ul>
 
@@ -336,12 +336,12 @@ Note:
 @title[ACPI Locations]
 ### <p align="right"><span class="gold" >ACPI Locations</span></p>
 <ul style="list-style-type:none">  
-  <li><span style="font-size:0.9em" >ACPI tables</span></li><br>
-  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiTablesDxe/AcpiTablesDxe.inf`</span></li><br><br>
-  <li><span style="font-size:0.9em" >ASL code</span></li><br>
-  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiTablesDxe/Asl/*.asl`</span></li><br><br>
-  <li><span style="font-size:0.9em" >Platform specifics are in the ACPI platform driver</span></li><br>
-  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiPlatformDxe/AcpiPlatformDxe.inf`</span></li><br><br>
+  <li><span style="font-size:0.9em" >ACPI tables</span></li>
+  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiTablesDxe/AcpiTablesDxe.inf`</span></li><br>
+  <li><span style="font-size:0.9em" >ASL code</span></li>
+  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiTablesDxe/Asl/*.asl`</span></li><br>
+  <li><span style="font-size:0.9em" >Platform specifics are in the ACPI platform driver</span></li>
+  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiPlatformDxe/AcpiPlatformDxe.inf`</span></li><br>
 </ul>
 ```
   MinnowBoard Max
