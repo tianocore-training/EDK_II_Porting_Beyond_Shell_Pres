@@ -499,7 +499,7 @@ Note:
 ### <p align="center"><span class="gold"   >Summary </span></p><br>
 <ul style="list-style-type:none">
  <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Locate driver locations for  porting EDK II modules<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; beyond the UEFI Shell for the New Project Platform </span> </li>
- <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Determine the protocols then match the UEFI Driver per Devices on a platform</span></li>
+ <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Determine the protocols then the UEFI Driver<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with Devices on a platform</span></li>
  <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;The goal is to boot to the OS</span></li>
 </ul>
 
