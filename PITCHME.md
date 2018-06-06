@@ -47,7 +47,7 @@ Note:
 -->
 <ul style="list-style-type:none">
  <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Locate driver locations for  porting EDK II modules<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; beyond the UEFI Shell for the New Project Platform </span> </li>
- <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Determine the protocols then match the UEFI Driver per Devices on a platform</span></li>
+ <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Determine the protocols and UEFI Driver per Devices on a platform</span></li>
  <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;The goal is to boot to the OS</span></li>
 </ul>
 
@@ -134,7 +134,7 @@ Note:
 @title[Add-in Card Section]
 <br><br><br><br><br><br><br>
 ### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add-in Card</span>
-<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Locate UEFI Drivers related to Add-in Cards and PCI Devices</span>
+<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Locate UEFI Drivers related to Add-in Cards</span>
  
 
 
@@ -283,7 +283,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide25.JPG
 @title[SMM]
-<p align="right"><span class="gold" >SMM Related</span></p>
+### <p align="right"><span class="gold" >SMM Related</span></p>
 
 
 Note:
@@ -310,12 +310,14 @@ Note:
 
 ---?image=/assets/images/slides/Slide27.JPG
 @title[ACPI]
-<p align="right"><span class="gold" >ACPI</span></p>
+### <p align="center"><span class="gold" >ACPI</span></p>
+<br>
+<br>
 <br>
 <ul style="list-style-type:none">
-  <li><span style="font-size:0.9em" >Provides ACPI Table driver for a platform</span></li><br>
-  <li><span style="font-size:0.9em" >Composed of ACPI Table Driver (generic) and ACPI Platform Driver (platform-specific)</span></li><br>
-  <li><span style="font-size:0.9em" >Platform Driver runs during DXE (before BDS)</span></li><br>
+  <li><span style="font-size:01.0em" >Provides ACPI Table driver for a platform</span></li><br>
+  <li><span style="font-size:01.0em" >Composed of ACPI Table Driver (generic) and ACPI Platform Driver (platform-specific)</span></li><br>
+  <li><span style="font-size:01.0em" >Platform Driver runs during DXE (before BDS)</span></li><br>
 </ul>
 
 Note:
@@ -330,11 +332,23 @@ Note:
 - Platform Driver runs during DXE (before BDS)
 
 
----?image=/assets/images/slides/Slide29.JPG
+---
 @title[ACPI Locations]
-<p align="right"><span class="gold" >ACPI Locations</span></p>
-  
+### <p align="right"><span class="gold" >ACPI Locations</span></p>
+<ul style="list-style-type:none">  
+  <li><span style="font-size:0.9em" >ACPI tables</span></li><br>
+  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiTablesDxe/AcpiTablesDxe.inf`</span></li><br><br>
+  <li><span style="font-size:0.9em" >ASL code</span></li><br>
+  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiTablesDxe/Asl/*.asl`</span></li><br><br>
+  <li><span style="font-size:0.9em" >Platform specifics are in the ACPI platform driver</span></li><br>
+  <li><span style="font-size:0.7em" ><font color="#ff4747">`/NewPlatformPkg`</font>`/AcpiPlatformDxe/AcpiPlatformDxe.inf`</span></li><br><br>
+</ul>
+```
+  MinnowBoard Max
+   <Tables and ASL Code> Vlv2DeviceRefCodePkg/AcpiTablesPCAT
+```
 
+  
 Note:
 
 - ACPI porting consists of the following:
@@ -391,15 +405,16 @@ Note:
 
 ---
 @title[BDS]
-<p align="right"><span class="gold" >BDS</span></p>
+### <p align="center"><span class="gold" >BDS</span></p>
 <br>
 <ul style="list-style-type:none">
-  <li><span style="font-size:01.1em" ><font color="#87E2A9"><b> BDS & BDS Libraries</b></font></span></li>
+  <li><span style="font-size:01.1em" ><font color="#92d050"><b> BDS & BDS Libraries</b></font></span></li>
    <ul style="list-style-type:none">
       <li><span style="font-size:0.7em" >`/MdeModulePkg/Universal/BdsDxe`</span></li>
       <li><span style="font-size:0.7em" >`/NewPlatformPkg/Library/NewPlatformBdsLib`</span></li>
    </ul>
-  <li><span style="font-size:01.1em" ><font color="#87E2A9"><b>Areas of Concern </b></font></span></li>
+   <br>
+  <li><span style="font-size:01.1em" ><font color="#92d050"><b>Areas of Concern </b></font></span></li>
   <ul style="list-style-type:disc">
    <li><span style="font-size:0.7em" >Console Settings</span></li>
    <li><span style="font-size:0.7em" >Language strings are contained in .UNI file</span></li>
@@ -447,7 +462,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide39.JPG
 @title[SMBIOS]
-<p align="right"><span class="gold" >SMBIOS</span></p>
+### <p align="center"><span class="gold" >SMBIOS</span></p>
 
 
 Note:
@@ -469,7 +484,7 @@ Note:
      - NewPlatformPkg/SmbiosMiscDxe
 
 
----?image=/assets/images/slides/Slide39.JPG
+---?image=/assets/images/slides/Slide41.JPG
 @title[BDS/CSM/SMBIOS Table]
 <p align="right"><span class="gold" >BDS, CSM and SMBIOS Table</span></p>
 
