@@ -32,4 +32,4 @@
 # EDK_II_Porting_beyond_Shell_pres
 Porting Beyond the UEFI Shell with EDK II
 
-To see the Slides goto https://gitpitch.com/Laurie0131/EDK_II_Porting_beyond_Shell_pres/master#/
+To see the Slides goto https://gitpitch.com/tianocore-training/EDK_II_Porting_beyond_Shell_pres/master#/
