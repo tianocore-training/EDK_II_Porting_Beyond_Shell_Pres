@@ -53,38 +53,30 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide3.JPG
-<!-- .slide: data-transition="none" -->
+---
 @title[Features Needed to Access OS]
-<p align="right"><span class="gold" >Features Needed to Access OS</span></p>
+<p align="right"><span class="gold" ><b>Features Needed to Access OS</b></span></p>
+@snap[north-west span-90 fragment]
+<br>
+<p style="line-height:50%" ><br>&nbsp;</p>
+<p style="line-height:75%" align="left"><span style="font-size:0.9em; font-weight: bold;">&nbsp;&nbsp;Add-in Card/ UEFI Driver Related</span></p>
+@box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.8em; font-weight: bold;" >&nbsp;&nbsp;USB&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LAN <br> &nbsp;&nbsp;IDE/SATA &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graphics <br> &nbsp;&nbsp;Integrated PCI Devices <br>&nbsp;</span></p>)
+<br>
+@snapend
 
-
-Note:
-
-- Add-in Card/ UEFI Driver Related
-  - USB
-  - LAN
-  - IDE/SATA
-  - Graphics 
-  - Integrated PCI Devices 
-
-- Platform Related DXE Driver Related
-  - SMM
-  - ACPI
-  - ACPI S3
-  - BDS
-  - CSM
-  - SMBIOS
-
-
-
-
-+++?image=/assets/images/slides/Slide4.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Features Needed to Access OS 02]
-<p align="right"><span class="gold" >Features Needed to Access OS</span></p>
-
+@snap[north-west span-90 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:50%" ><br><br><br>&nbsp;</p>
+<p style="line-height:75%" align="left"><span style="font-size:0.9em; font-weight: bold;">&nbsp;&nbsp;Platform Related DXE Driver Related </span></p>
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.8em; font-weight: bold;" >SMM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACPI <br>ACPI S3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;CSM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SMBIOS <br>&nbsp;</span></p>)
+<br>
+@snapend
 
 Note:
 
@@ -104,30 +96,6 @@ Note:
   - SMBIOS
 
 
-
-+++?image=/assets/images/slides/Slide5.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Features Needed to Access OS 03]
-<p align="right"><span class="gold" >Features Needed to Access OS</span></p>
-
-
-Note:
-
-- Add-in Card/ UEFI Driver Related
-  - USB
-  - LAN
-  - IDE/SATA
-  - Graphics 
-  - Integrated PCI Devices 
-
-- Platform Related DXE Driver Related
-  - SMM
-  - ACPI
-  - ACPI S3
-  - BDS
-  - CSM
-  - SMBIOS
 
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -140,7 +108,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide7.JPG
 @title[Protocol Stack: IDE/SATA]
-<p align="right"><span class="gold" >Protocol Stack: IDE/SATA</span></p>
+<p align="right"><span class="gold" ><b>Protocol Stack: IDE/SATA</b></span></p>
 
 
 Note:
@@ -159,7 +127,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide9.JPG
 @title[Driver Stack: IDE/SATA]
-<p align="right"><span class="gold" >Driver Stack: IDE/SATA</span></p>
+<p align="right"><span class="gold" ><b>Driver Stack: IDE/SATA</b></span></p>
 
 
 Note:
@@ -174,7 +142,7 @@ Currently our reference drivers support both PATA and SATA.
 
 ---?image=/assets/images/slides/Slide11.JPG
 @title[Protocol Stack: USB]
-<p align="right"><span class="gold" >Protocol Stack: USB</span></p>
+<p align="right"><span class="gold" ><b>Protocol Stack: USB</b></span></p>
 
 
 Note:
@@ -184,7 +152,7 @@ Notice that these protocols are Industry standard
 
 ---?image=/assets/images/slides/Slide13.JPG
 @title[Driver Stack: USB]
-<p align="right"><span class="gold" >Driver Stack: USB</span></p>
+<p align="right"><span class="gold" ><b>Driver Stack: USB</b></span></p>
 
 
 Note:
@@ -197,7 +165,7 @@ Notice that these drivers are Industry standard and probably will not need porti
 ---?image=/assets/images/slides/Slide15.JPG
 <!-- .slide: data-transition="none" -->
 @title[Protocol Stack: Network]
-<p align="right"><span class="gold" >Protocol Stack: Network</span></p>
+<p align="right"><span class="gold" ><b>Protocol Stack: Network<b></span></p>
 
 
 Note:
@@ -212,7 +180,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Protocol Stack: Network 02]
-<p align="right"><span class="gold" >Protocol Stack: Network</span></p>
+<p align="right"><span class="gold" ><b>Protocol Stack: Network</b></span></p>
 
 
 Note:
@@ -225,7 +193,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide18.JPG
 @title[Driver Stack: Network]
-<p align="right"><span class="gold" >Driver Stack: Network</span></p>
+<p align="right"><span class="gold" ><b>Driver Stack: Network</b></span></p>
 
 
 Note:
@@ -243,7 +211,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Protocol & Driver Stack: Graphics]
-<p align="right"><span class="gold" >Protocol and Driver Stack: Graphics</span></p>
+<p align="right"><span class="gold" ><b>Protocol and Driver Stack: Graphics</b></span></p>
 
 
 Note:
@@ -259,10 +227,54 @@ Note:
   - MAX  gop binary  - (workspace)\silicon\Vlv2MiscBinariesPkg\GOP
 
 
-
----?image=/assets/images/slides/Slide22.JPG
+---
 @title[Integrated PCI Devices: Option ROMs]
-<p align="right"><span class="gold" >Integrated PCI Devices: Option ROMs</span></p>
+<p align="right"><span class="gold" ><b>Integrated PCI Devices: Option ROMs</b></span></p>
+
+
+@snap[north-west span-20  ]
+<br>
+<br>
+<br>
+<br>
+@fa[certificate fa-2x gp-bullet-cyan]
+<br>
+<br>
+<br>
+<br>
+@fa[certificate fa-2x gp-bullet-yellow]
+<br>
+@snapend
+
+@snap[north-east span-80 fragment ]
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:75%" align="left"><span style="font-size:0.9em">UEFI Device Driver Model- <br>@size[0.6em](See Section 2.6.3 of UEFI Specification <br>Follow the UEFI Driver Binding Protocol)
+</span></p>
+<br>
+@snapend
+
+
+@snap[north-east span-80 fragment ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:75%" align="left"><span style="font-size:0.9em">EDK II Modules</span><br>
+<span style="font-size:0.65em; font-family:Consolas;">OptionRomPkg/UndiRuntimeDxe 
+&nbsp;&nbsp;&nbsp;&nbsp; 
+ </span> </p>  
+<br>
+@snapend
+
+
 
 Note:
 - These are onboard PCI devices
@@ -280,11 +292,36 @@ Note:
 <span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
  
-
----?image=/assets/images/slides/Slide25.JPG
+---
 @title[SMM]
 ### <p align="right"><span class="gold" >SMM Related</span></p>
 
+@snap[north-west span-100 ]
+<br>
+<br>
+@box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em;" >Intel typically provides SMM Driver code<br>@size[.6em](You're only require to provide platform specific SMI handlers<br>&nbsp;)</span></p>)
+<br>
+@snapend
+
+<br>
+<br>
+<br>
+<p style="line-height:85%" align="left"><span style="font-size:0.9em;" >Base Protocol <br></span>
+<span style="font-size:0.65em; font-family:Consolas;" > /@color[#ff4747](IA32FamilyCpuPkg)/SmmBase/SmmBase.inf
+</span></p>
+
+<p style="line-height:85%" align="left"><span style="font-size:0.9em;" >Access Protocol (SMRAM)<br></span>
+<span style="font-size:0.65em; font-family:Consolas;" > /@color[#ff4747](&lt;MemCntlX&gt;Pkg)/SmmAccessDxe/SmmAccessDxe.inf
+</span></p>
+
+
+<p style="line-height:85%" align="left"><span style="font-size:0.9em;" >Control Protocol (SMI)<br></span>
+<span style="font-size:0.65em; font-family:Consolas;" > /@color[#ff4747](&lt;PchX&gt;Pkg)/SmmControlDxe/SmmControlDxe.inf
+</span></p>
+
+@snap[south-east span-100 ]
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MinnowBoard Max<br>&nbsp;&nbsp;&nbsp;&nbsp;  - &lt;Access&gt; Vlv2DeviceRefCodePkg/ValleyView2Soc/CPU<br>&nbsp;&nbsp;&nbsp;&nbsp;  - &lt;Control&gt; Vlv2DeviceRefCodePkg/ValleyView2Soc/SouthCluster<br>&nbsp;&nbsp;</span></p>)
+@snapend
 
 Note:
 - Base Protocol
@@ -305,6 +342,7 @@ Note:
 - MinnowBoard Max
   - <Access> Vlv2DeviceRefCodePkg/ValleyView2Soc/CPU
   - <Control> Vlv2DeviceRefCodePkg/ValleyView2Soc/SouthCluster
+
 
 
 
@@ -360,11 +398,31 @@ Note:
 - MinnowBoard Max
   - <Tables and ASL Code> Vlv2DeviceRefCodePkg/AcpiTablesPCAT
 
-
-
----?image=/assets/images/slides/Slide31.JPG
+---
 @title[ACPI S3 Additional Features]
-<p align="right"><span class="gold" >ACPI S3 Additional Features</span></p>
+<p align="right"><span class="gold" ><b>ACPI S3 Additional Features</b></span></p>
+
+<ul style="list-style-type:none">  
+  <li>@fa[circle gp-bullet-cyan]<span style="font-size:0.9em" >&nbsp;&nbsp;Platform Independent Modules </span></li>
+  <li><span style="font-size:0.7em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`/IntelFrameworkModulePkg/Universal/Acpi/`... </span></li><br>
+  <li>@fa[circle gp-bullet-orange]<span style="font-size:0.9em" >&nbsp;&nbsp;ScriptSave driver </span></li>
+  <li><span style="font-size:0.7em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MdeModulePkg/Universal/Acpi/BootScriptExecutorDxe `</span></li><br>
+  <li>@fa[circle gp-bullet-blue]<span style="font-size:0.9em" >&nbsp;&nbsp;Platform Dependent Modules </span></li>
+</ul>
+
+```
+PEI:                            // Check for recovery paths or just an S3 resume.
+ <NewProjectPkg>/PlatformInitPei/BootMode.c   // Get S3 resume information for MRC
+DXE:
+ <NewProjectPkg>/PlatformDxe/Platform.c       // Set memory variable for S3 resume.
+SMM:
+ <NewProjectPkg>/PlatformSmm/Platform.c       // Allocate reserved ACPI memory for S3 resume
+BDS:
+ <NewProjectPkg>/Library/PlatformBdsLib/BdsPlatform.c:    	// Prepare S3 information
+ 
+```
+
+
 
 Note:
 
@@ -397,7 +455,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide33.JPG
 @title[SMM/ACPI/S3 Table]
-<p align="right"><span class="gold" >SMM, ACPI, &S3 Table</span></p>
+<p align="right"><span class="gold" ><b>SMM, ACPI, &S3 Table</b></span></p>
 
 Note:
    
