@@ -490,10 +490,31 @@ Note:
 
 - Type of memory test desired. While PEI performs a small one for the amount of RAM needed for PEI/DXE, the check of all the memory found during PEI/DXE is checked here. Once again the type of memory testing done is platform specific. This test can be sparse or rigorous.
 
-
----?image=/assets/images/slides/Slide37.JPG
+---
 @title[Compatibility Support Module (CSM)]
-<p align="right"><span class="gold" >Compatibility Support Module (CSM)</span></p>
+<p align="right"><span class="gold" ><b>Compatibility Support Module (CSM)</b></span></p>
+<br>
+<ul style="list-style-type:none">
+  <li><span style="font-size:01.1em" ><font color="#92d050"><b> CSM 32 Component</b></font></span></li>
+   <ul style="list-style-type:none">
+      <li><span style="font-size:0.7em" >8259 Chipset - `PcAtChipsetPkg/8259InterruptControllerDxe`</span></li>
+      <li><span style="font-size:0.7em" >Legacy BIOS Region - `IntelFrameworkModulePkg/Csm`</span></li>
+   </ul>
+   <br>
+  <li><span style="font-size:01.1em" ><font color="#92d050"><b>Platform Specific </b></font></span></li>
+  <ul style="list-style-type:none; line-height:0.7;">
+   <li><span style="font-size:0.65em" >Legacy chipset support - <font face="Consolas">&lt;RefCode&gt;Pkg/&lt;SoC&gt;/SouthCluster/LegacyInterrupt/Dxe</font></span></li>
+   <li><span style="font-size:0.65em" >Platform specifics (i.e. MP tables) - <font face="Consolas">&lt;RefCode&gt;Pkg/&lt;SoC&gt;/CPU/CpuInit/Dxe/MpCommon</font></span></li>
+   <li><span style="font-size:0.65em" >Video ROM (may be platform specific) - <font face="Consolas">NewPlatformPkg/PciPlatform</font></span></li>
+ </ul>
+
+</ul>
+```
+MinnowBoard Max
+  <RefCode>Pkg/<SoC>:   Vlv2DeviceRefCodePkg/ValleyView2Soc
+
+```
+
 
 Note:
 - CSM 32 Component 
@@ -544,7 +565,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide41.JPG
 @title[BDS/CSM/SMBIOS Table]
-<p align="right"><span class="gold" >BDS, CSM and SMBIOS Table</span></p>
+<p align="right"><span class="gold" ><b>BDS, CSM and SMBIOS Table</b></span></p>
 
 Note:
 
